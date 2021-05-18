@@ -1,0 +1,41 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btnOk").click(function(){
+var a=$("#textFirst").val();
+var b=$("#textSecond").val();
+
+
+var r= parseInt(a)+ parseInt(b);
+
+$("#textResult").val(r);
+
+  return false;
+
+});
+
+
+
+});
+</script>
+</head>
+<body>
+first:<input type="text" id="textFirst"/><br></br>
+second:<input type="text" id="textSecond"/><br></br>
+
+result:<input type="text" id="textResult"/><br></br>
+<button type="button" id="btnOk">calculate</button>
+
+<select id="operators">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="/">/</option>
+<option value="*">*</option>
+
+
+</select>
+
+</body>
+</html>
